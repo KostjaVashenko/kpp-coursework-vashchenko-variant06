@@ -1,0 +1,3 @@
+location_id;defect_type;traffic_intensity;limit_intensity;severity_score;hazard_score
+1;Просідання полотна;70.0;40.0;45;65
+2;Лущення асфальту;18.5;20.0;20;35
