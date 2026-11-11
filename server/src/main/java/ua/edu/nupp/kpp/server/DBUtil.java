@@ -1,4 +1,4 @@
-﻿package ua.edu.nupp.kpp.server;
+package ua.edu.nupp.kpp.server;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -18,13 +18,4 @@ public final class DBUtil {
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 
-    // Одноразова перевірка для п. 10.3 Інструкції Етапу 1 (після успішного запуску метод main видалити):
-    public static void main(String[] args) {
-        try (Connection connection = getConnection()) {
-            System.out.println("Підключення до MySQL успішне.");
-        } catch (SQLException e) {
-            System.out.println("Помилка підключення до MySQL:");
-            System.out.println(e.getMessage());
-        }
-    }
 }
